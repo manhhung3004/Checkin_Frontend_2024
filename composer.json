@@ -1,0 +1,8 @@
+{
+    "name": "acer/dai-hoi",
+    "require": {
+        "cboden/ratchet": "^0.4.4",
+        "bluerhinos/phpmqtt": "^1.0",
+        "ratchet/pawl": "^0.4.1"
+    }
+}

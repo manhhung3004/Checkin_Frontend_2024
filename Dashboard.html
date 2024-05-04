@@ -1,0 +1,190 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+</head>
+
+<body>
+    <!-- Thêm phần tử để hiển thị chi tiết thông tin -->
+    <div id="details">
+        <h2>Detail Information</h2>
+        <div class="detail-item">
+            <label>Họ và Tên:</label>
+            <span id="hoTen"></span>
+        </div>
+        <div class="detail-item">
+            <label>MSSV:</label>
+            <span id="mssv"></span>
+        </div>
+        <div class="detail-item">
+            <label>Chi đoàn:</label>
+            <span id="chiDoan"></span>
+        </div>
+        <div class="detail-item">
+            <label>Số ghế:</label>
+            <span id="soGhe"></span>
+        </div>
+        <div class="detail-item">
+            <label>Chức vụ:</label>
+            <span id="chucVu"></span>
+        </div>
+        <div class="detail-item">
+            <label>Điểm danh:</label>
+            <span id="diemDanh"></span>
+        </div>
+        <div class="detail-item">
+            <label>Ghi chú:</label>
+            <span id="ghiChu"></span>
+        </div>
+        <div class="detail-item">
+            <label>Thời gian đến:</label>
+            <span id="thoiGianDen"></span>
+        </div>
+         <h5>Status: <span id="status"></span></h5>
+    </div>
+
+    <div class="movie-cssontainer">
+        <!-- <h5>Status: <span id="status"></span></h5>
+        <select id="movie">
+            <option value="10">Avengers: Endgame ($10)</option>
+            <option value="12">Joker ($12)</option>
+            <option value="8">Toy Story 4 ($8)</option>
+            <option value="9">The Lion King ($9)</option>
+        </select> -->
+    </div>
+    <!-- <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul> -->
+    <div class="container">
+        <div class="screen"></div>
+        <!-- hàng số 1 -->
+        <div class="row">
+            <div class="seat" data-position="A1">A1</div>
+            <div class="seat" data-position="A2">A2</div>
+            <div class="seat" data-position="A3"></div>
+            <div class="seat" data-position="A4"></div>
+            <div class="seat" data-position="A5"></div>
+            <div class="seat" data-position="A6"></div>
+            <div class="seat" data-position="A7"></div>
+            <div class="seat" data-position="A8"></div>
+            <div class="seat" data-position="A9"></div>
+            <div class="seat" data-position="A10"></div>
+            <div class="seat" data-position="A11"></div>
+            <div class="seat" data-position="A12"></div>
+            <div class="seat" data-position="A13"></div>
+            <div class="seat" data-position="A14"></div>
+            <div class="seat" data-position="A15"></div>
+        </div>
+        <!-- hàng số 2 -->
+        <div class="row">
+            <div class="seat" data-position="B1"></div>
+            <div class="seat" data-position="B2"></div>
+            <div class="seat" data-position="B3"></div>
+            <div class="seat" data-position="B4"></div>
+            <div class="seat" data-position="B5"></div>
+            <div class="seat" data-position="B6"></div>
+            <div class="seat" data-position="B7"></div>
+            <div class="seat" data-position="B8"></div>
+            <div class="seat" data-position="B9"></div>
+            <div class="seat" data-position="B10"></div>
+            <div class="seat" data-position="B11"></div>
+            <div class="seat" data-position="B12"></div>
+            <div class="seat" data-position="B13"></div>
+            <div class="seat" data-position="B14"></div>
+            <div class="seat" data-position="B15"></div>
+        </div>
+        <!-- hàng số 3 -->
+        <div class="row">
+            <div class="seat" data-position="C1"></div>
+            <div class="seat" data-position="C2"></div>
+            <div class="seat" data-position="C3"></div>
+            <div class="seat" data-position="C4"></div>
+            <div class="seat" data-position="C5"></div>
+            <div class="seat" data-position="C6"></div>
+            <div class="seat" data-position="C7"></div>
+            <div class="seat" data-position="C8"></div>
+            <div class="seat" data-position="C9"></div>
+            <div class="seat" data-position="C10"></div>
+            <div class="seat" data-position="C11"></div>
+            <div class="seat" data-position="C12"></div>
+            <div class="seat" data-position="C13"></div>
+            <div class="seat" data-position="C14"></div>
+            <div class="seat" data-position="C15"></div>
+        </div>
+        <!-- hàng số 4 -->
+        <div class="row">
+            <div class="seat" data-position="D1"></div>
+            <div class="seat" data-position="D2"></div>
+            <div class="seat" data-position="D3"></div>
+            <div class="seat" data-position="D4"></div>
+            <div class="seat" data-position="D5"></div>
+            <div class="seat" data-position="D6"></div>
+            <div class="seat" data-position="D7"></div>
+            <div class="seat" data-position="D8"></div>
+            <div class="seat" data-position="D9"></div>
+            <div class="seat" data-position="D10"></div>
+            <div class="seat" data-position="D11"></div>
+            <div class="seat" data-position="D12"></div>
+            <div class="seat" data-position="D13"></div>
+            <div class="seat" data-position="D14"></div>
+            <div class="seat" data-position="D15"></div>
+        </div>
+        <!-- hàng số 5 -->
+        <div class="row">
+            <div class="seat" data-position="E1"></div>
+            <div class="seat" data-position="E2"></div>
+            <div class="seat" data-position="E3"></div>
+            <div class="seat" data-position="E4"></div>
+            <div class="seat" data-position="E5"></div>
+            <div class="seat" data-position="E6"></div>
+            <div class="seat" data-position="E7"></div>
+            <div class="seat" data-position="E8"></div>
+            <div class="seat" data-position="E9"></div>
+            <div class="seat" data-position="E10"></div>
+            <div class="seat" data-position="E11"></div>
+            <div class="seat" data-position="E12"></div>
+            <div class="seat" data-position="E13"></div>
+            <div class="seat" data-position="E14"></div>
+            <div class="seat" data-position="E15"></div>
+        </div>
+        <!-- hàng số 6 -->
+        <div class="row">
+            <div class="seat" data-position="F1"></div>
+            <div class="seat" data-position="F2"></div>
+            <div class="seat" data-position="F3"></div>
+            <div class="seat" data-position="F4"></div>
+            <div class="seat" data-position="F5"></div>
+            <div class="seat" data-position="F6"></div>
+            <div class="seat" data-position="F7"></div>
+            <div class="seat" data-position="F8"></div>
+            <div class="seat" data-position="F9"></div>
+            <div class="seat" data-position="F10"></div>
+            <div class="seat" data-position="F11"></div>
+            <div class="seat" data-position="F12"></div>
+            <div class="seat" data-position="F13"></div>
+            <div class="seat" data-position="F14"></div>
+            <div class="seat" data-position="F15"></div>
+        </div>
+    </div>
+
+    <!-- <p class="text">
+        You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+    </p> -->
+    <script src="script.js"></script>
+    <script src="format_data.js"></script>
+</body>
+
+</html>
